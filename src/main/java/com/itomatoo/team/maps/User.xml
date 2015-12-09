@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.itomatoo.team.model">
+	<class name="User" table="admin_user">
+        <id name="id">
+            <generator class="native"></generator>
+        </id>
+        <property name="userName" column="user_name" length="16" not-null="true" unique="true"/>
+    </class>
+</hibernate-mapping>
